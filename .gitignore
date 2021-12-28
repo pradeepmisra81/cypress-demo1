@@ -1,7 +1,5 @@
 node_modules
 
-cypress.json
-
 yarn.lock
 
 cypress/screenshots/*

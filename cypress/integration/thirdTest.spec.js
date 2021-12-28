@@ -10,6 +10,26 @@ describe('Test Suite 1', () => {
         cy.get('body > ngx-landing-app > ngx-landing-pages > ngx-landing-home > nb-layout > div.scrollable-container > div > nb-layout-header > nav > ngx-landing-header > div.section.middle > div > nb-menu > ul > li.menu-item.ng-tns-c44-2.ng-star-inserted > a > span').click();
         cy.contains('Forms').click();
         cy.contains('Form Layouts').click();
+
+        cy.get('input');
+
+        cy.get('#inputEmail1');
+
+        cy.get('.input-full-width');
+
+        cy.get('[class="input-full-width size-medium status-basic shape-rectangle nb-transition"]');
+
+        cy.get('[placeholder="Email"]');
+
+        cy.get('[placeholder="Email"][type="email"]');
+
+        cy.get('input[placeholder="Email"][type="email"]');
+
+        cy.get('input[placeholder="Email"][type="email"]#inputEmail1.input-full-width');
+
     })
 
+    it('Test Case 3', () => {
+        cy.contains('[status="warning"]','Sign in');
+    })
 })
